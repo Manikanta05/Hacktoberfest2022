@@ -1,7 +1,20 @@
 
 package com.mani.todo.controller;
 
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mani.todo.model.TodoModel;
+
+@RestController
 public class TodoController {
-// ADD your code here
-  System.out.println("This is a controller");
+  //System.out.println("This is a controller");
+  @GetMapping("/todo")
+  public List<TodoModel> getTodos(){
+	  //write your code here
+	  return null;
+  }  
+  
 }
